@@ -6,8 +6,6 @@
     "build": "next build",
     "export": "next export",
     "dev": "expo start --web",
-    "prepare": "expo-next-adapter",
-    "postinstall": "expo-next-adapter",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
