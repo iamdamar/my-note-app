@@ -1,14 +1,16 @@
+// babel.config.js
 module.exports = function (api) {
   api.cache(true);
 
   const presets = [
     'next/babel', // Preset for Next.js
-    '@babel/preset-env', // Preset for latest JavaScript features
+    ['@babel/preset-env', { modules: 'auto' }], // Automatically detect and handle module formats
     '@babel/preset-react' // Preset for React JSX
   ];
 
   const plugins = [
-    // Any additional plugins you may need
+    '@babel/plugin-transform-runtime', // Plugin for async/await and other runtime features
+    // Add any other necessary plugins
   ];
 
   return {
