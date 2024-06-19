@@ -2,17 +2,17 @@ module.exports = function (api) {
   api.cache(true);
 
   const presets = [
-    '@babel/preset-env',
-    '@babel/preset-react',
+    'next/babel', // Preset for Next.js
+    '@babel/preset-env', // Preset for latest JavaScript features
+    '@babel/preset-react' // Preset for React JSX
   ];
 
   const plugins = [
-    '@babel/plugin-transform-runtime',
-    // Add any additional plugins needed
+    // Any additional plugins you may need
   ];
 
   return {
     presets,
-    plugins,
+    plugins
   };
 };
