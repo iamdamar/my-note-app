@@ -1,9 +1,11 @@
 {
   "name": "my-note-app",
-  "main": "expo-router/entry",
+  "main": "app/index.js",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "build": "expo build:web",
+    "export": "next export",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -15,8 +17,10 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "next": "^12.0.0",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.0.2",
+    "crypto-browserify": "^3.12.0",
     "expo": "~51.0.14",
     "expo-constants": "~16.0.2",
     "expo-font": "~12.0.7",
